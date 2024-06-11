@@ -1,6 +1,9 @@
 const express = require("express")
 const mongoose = require("mongoose")
 const cors = require("cors")
+const {playschoolmodel} = require("./models/playschool")
+
+
 
 const app = express()
 app.use(cors())
