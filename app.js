@@ -22,7 +22,18 @@ app.post("/add",(req,res)=>{
 })
 
 app.get("/view",(req,res)=>{
-    res.send("view")
+    //res.send("view")
+    playschoolmodel.find().then(
+
+        (data) => {
+            
+            res.json(data)
+        }
+
+
+    ).catch()
+
+
 })
 
 app.listen(8080,()=>{
